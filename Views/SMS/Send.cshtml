@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Send";
+}
+
+<h2>Send</h2>
+
+@using (Html.BeginForm("Send", "SMS", FormMethod.Post))
+{
+
+    <input id="to" name="to" type="text" placeholder="To" />
+    <input id="text" name="text" type="text" placeholder="Text" />
+    <input type="submit" value="Send" />
+}
